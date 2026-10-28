@@ -1,0 +1,88 @@
+const allOffers = [
+  {
+    id: 10,
+    ctg: "پاوربانک",
+    name: "پاور بانک 20000 آنکر مدل 25",
+    sale: "40٪ تخفیف",
+    price: 500000,
+    oldPrice: 1350000,
+    imgae: "power (4).webp",
+    image1: "power1.jpg",
+    image2: "power2.jpg",
+    Discount: 50,
+    q:1,
+    color:"سفید"
+  },
+  {
+    id: 20,
+    ctg: "ایرپاد",
+    name: "ایرپاد پرو گیمینگ مدل 14",
+    sale: "40٪ تخفیف",
+    price: 700000,
+    oldPrice: 950000,
+    imgae: "airpod (11).webp",
+    image1: "airpod1.jpg",
+    image2: "airpod2.jpg",
+    Discount: 40,
+    q:1,
+    color:"سفید"
+  },
+  {
+    id: 30,
+    ctg: "شارژر",
+    name: "شارژر وایرلس هیسکا مدل 36",
+    sale: "40٪ تخفیف",
+    price: 1900000,
+    oldPrice: 2300000,
+    imgae: "charger (0).jpg",
+    image1: "charger1.jpg",
+    image2: "charger2.jpg",
+    Discount: 35,
+    q:1,
+    color:"سفید"
+  },
+  {
+    id: 40,
+    ctg: "قاب",
+    name: "قاب  آیفون 12 پرو مدل 81",
+    sale: "40٪ تخفیف",
+    price: 300000,
+    oldPrice: 550000,
+    imgae: "cover (7).jpg",
+    image1: "cover1.jpg",
+    image2: "cover2.jpg",
+    Discount: 40,
+    q:1,
+    color:"سفید"
+  },
+  {
+    id: 50,
+    ctg: "هدفون",
+    name: "هدفون گیمینگ میکرو مدل 95",
+    sale: "40٪ تخفیف",
+    price: 1000000,
+    oldPrice: 1000000,
+    imgae: "headphon (1).webp",
+    image1: "headphon1.jpg",
+    image2: "headphon2.jpg",
+    Discount: 60,
+    q:1,
+    color:"سفید"
+  },
+  {
+    id: 60,
+    ctg: "پاوربانک",
+    name: "پاور بانک 10000 اکو مدل 62",
+    sale: "40٪ تخفیف",
+    price: 600000,
+    oldPrice: 900000,
+    imgae: "power (16).webp",
+    image1: "power1.jpg",
+    image2: "power2.jpg",
+    Discount: 50,
+    q:1,
+    color:"سفید"
+  },
+];
+
+export default allOffers;

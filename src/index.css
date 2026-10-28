@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../public/fonts/Vazir.woff") format("woff");
+}
+@font-face {
+  font-family: "Vazir-num";
+  src: url("../public/fonts/Vazir-Light-FD.woff") format("woff");
+}
+@layer utilities {
+  body {
+    direction: rtl;
+    font-family: "Vazir";
+    font-family: "Vazir-num";
+  }
+  .flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vazir {
+    font-family: "Vazir";
+  }
+  .vazir-bold {
+    font-family: "Vazir";
+    font-weight: bold;
+  }
+  .sky {
+    background: linear-gradient(
+      to right,
+      RGBA(6, 182, 212),
+      RGBA(34, 211, 238)
+    );
+  }
+  .Purple {
+    background: linear-gradient(
+      to right,
+      RGBA(139, 92, 246),
+      RGBA(167, 139, 250)
+    );
+  }
+  .blue {
+    background: linear-gradient(
+      to right,
+      RGBA(59, 130, 246),
+      RGBA(96, 165, 250)
+    );
+  }
+  textarea{
+    resize: none;
+  }
+  .navlinks a.active {
+    background-color: #068fff;
+  }
+
+  .line-step-container {
+    overflow: hidden;
+    padding: 0px 5px;
+    border-radius: 10px;
+  }
+  .line-step {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .line-step::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: #e9e9e9;
+    border-radius: 10px;
+  }
+  .line-step-boxs {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .line-step-boxs::before {
+    z-index: 3;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    box-shadow: var(--shadow-md);
+    border-radius: 50%;
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .line-step-box {
+    width: 33.33%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .line-step-box.complete::before {
+    content: "";
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #068fff;
+    z-index: -1;
+    border-radius: 0px;
+  }
+
+  .payment::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #068fff;
+    z-index: -1;
+    border-radius: 0px;
+  }
+
+  .line-step-box.complete .icon {
+    background: #ff9204;
+    color: #fff;
+  }
+  .line-step-box .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    top: 15px;
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px !important;
+    border-radius: 50%;
+  }
+  .paralexHome {
+    width: 100%;
+    height: 350px;
+    background-image: url(../public/images/paralex.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bgTicket {
+    background-image: url(/public/images/body_back4.jpg);
+  }
+  .paralexHome2 {
+    width: 100%;
+    height: 350px;
+    background-image: url(../public/images/paralex-home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .line-step-boxs::after {
+    z-index: 3;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    box-shadow: var(--shadow-md);
+    border-radius: 50%;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  .modal-parent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    font-family: "Vazir";
+    opacity: 1;
+  }
+  .swiper-button-next::after {
+    color: #000000;
+    padding: 13px;
+    border-radius: 20%;
+    font-weight: bold;
+    background-color: #a7a7a7;
+    position: relative;
+    left: -5px;
+  }
+  .swiper-button-prev::after {
+    color: #000000;
+    padding: 13px;
+    border-radius: 20%;
+    font-weight: bold;
+    background-color: #a7a7a7;
+    position: relative;
+    left: 5px;
+  }
+  :root {
+    --swiper-navigation-size: 20px !important;
+  }
+  a.active {
+    background-color: #35a0f9;
+    color: white;
+  }
+  .error {
+    color: red;
+    margin-top: 5px;
+    font-family: "Vazir";
+    font-weight: 600;
+  }
+}
