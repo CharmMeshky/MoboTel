@@ -96,7 +96,7 @@ export default function Footer() {
       </footer>
       <div className="w-full h-10 bg-body text-black flex-row-center vazir-bold border-t-[3px] ">
         <span className="text-blue text-md vazir">
-          \\ Developer : Amirhosein Saeedi //
+          \\ Developer : Amirhosein Babaei //
         </span>
       </div>
     </>
